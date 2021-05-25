@@ -3,4 +3,4 @@ project(project)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(project main.cpp file_manager.cpp file_manager.h log_manager.cpp log_manager.h log_level.h output_target.h)
+add_executable(project main.cpp file_manager.cpp file_manager.h log_manager.cpp log_manager.h log_level.h output_target.h moment.cpp moment.h)

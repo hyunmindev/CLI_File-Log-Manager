@@ -7,17 +7,17 @@
 
 #include <fstream>
 
+#include "moment.h"
 #include "log_level.h"
 
 class FileManager {
  public:
   static void Write(const std::string &log_level,
-                    const std::string &current_time,
                     const std::string &file_name,
                     const std::string &function,
                     int line,
-                    const std::string &log,
-                    const std::string &current_date);
+                    const std::string &log);
+  static void CleanUpFile();
 
  private:
   FileManager() = default;

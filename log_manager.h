@@ -10,6 +10,7 @@
 #include <ctime>
 #include <map>
 
+#include "moment.h"
 #include "file_manager.h"
 #include "log_level.h"
 #include "output_target.h"
@@ -36,8 +37,6 @@ class LogManager {
  private:
   LogManager() = default;
   static std::string ConvertLogLevelToString(LogLevel log_level);
-  static std::string GetCurrentTime();
-  static std::string GetCurrentDate();
   static void OutputToCommand(LogLevel log_level,
                               const std::string &file_name,
                               const std::string &function,

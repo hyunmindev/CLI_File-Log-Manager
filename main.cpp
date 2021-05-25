@@ -14,6 +14,7 @@ void LogTest() {
 }
 
 int main() {
+  FileManager::CleanUpFile(); // clean up old file
   OutputLog(LogLevel::ERROR, "error debug test 1")
   OutputLog(LogLevel::WARN, "warn debug test 2")
   OutputLog(LogLevel::INFO, "info debug test 3")
